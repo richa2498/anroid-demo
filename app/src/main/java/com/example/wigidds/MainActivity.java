@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this , "The selected item :" + spinner.getSelectedItem(),Toast.LENGTH_LONG).show();
                 CheckBox checkBox = findViewById(R.id.check_cnd);
                 if(checkBox.isChecked()){
-                    Log.i("spinner" , "Condition Accepted");
+                    Log.i("Check Box" , "Condition Accepted");
 
                 }else
                 {
-                    Log.i("spinner" , "Condition Not Accepted");
+                    Log.i("Check Box" , "Condition Not Accepted");
                     Toast.makeText(MainActivity.this , "Select the condition" ,Toast.LENGTH_SHORT).show();
                 }
 
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.pink:
                 Toast.makeText(this,"Pink",Toast.LENGTH_SHORT).show();
                 break;
+
         }
 
     }
