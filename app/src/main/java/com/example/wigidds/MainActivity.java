@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
                 }else
                 {
+
+                    
                     Log.i("Check Box" , "Condition Not Accepted");
                     Toast.makeText(MainActivity.this , "Select the condition" ,Toast.LENGTH_SHORT).show();
                 }
