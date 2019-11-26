@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Wigid Demo"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp"/>
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/color_sppiner"
+        android:entries="@array/colors"
+        android:layout_marginBottom="20dp"
+
+        />
+
+ <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_marginBottom="30dp"
+    android:id="@+id/radio">
+
+     <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:onClick="itemChecked"
+        android:text="@string/green"
+        android:id="@+id/green"/>
+
+     <RadioButton
+         android:id="@+id/yellow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:onClick="itemChecked"
+         android:text="@string/yellow" />
+
+     <RadioButton
+         android:id="@+id/blue"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:onClick="itemChecked"
+         android:text="@string/blue" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="itemChecked"
+        android:text="@string/pink"
+        android:id="@+id/pink"/>
+
+</RadioGroup>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conditions"
+        android:id="@+id/check_cnd"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:background="@color/colorAccent"
+        android:id="@+id/btn"/>
+    </LinearLayout>
